@@ -1,0 +1,140 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Add Member Form */
+.add-member {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.add-member input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.add-member button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-member button:hover {
+  background-color: #005ecb;
+}
+
+/* Member Cards */
+.members {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.member-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.member-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.habit-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.habit-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+/* Habit completion toggle */
+.habit-list input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Add Habit input */
+.member-card .add-habit {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.member-card .add-habit input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.member-card .add-habit button {
+  padding: 0.6rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.member-card .add-habit button:hover {
+  background-color: #1e7e34;
+}
+
+/* Responsive: align inputs side-by-side on larger screens */
+@media (min-width: 600px) {
+  .add-member {
+    flex-direction: row;
+  }
+
+  .member-card .add-habit {
+    flex-direction: row;
+  }
+}

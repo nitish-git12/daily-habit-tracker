@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DayCircle – Daily Habit Tracker</title>
+  <link rel="stylesheet" href="styles/app.css" />
+
+   
+</head>
+<body>
+  <div class="container">
+    <h1>👨‍👩‍👧‍👦 DayCircle</h1>
+    <p class="subtitle">Daily Habits for the Family</p>
+
+    <!-- Add Member Section -->
+    <div class="add-member">
+      <input type="text" id="memberName" placeholder="Enter member name..." />
+      <button onclick="addMember()">➕ Add Member</button>
+    </div>
+
+    <!-- Members will be rendered here -->
+    <div class="members" id="membersContainer">
+      <!-- Example:
+      <div class="member-card">
+        <h3>👤 Papa</h3>
+        <ul>
+          <li>🧘 Yoga ✅</li>
+          <li>📚 Reading ❌</li>
+        </ul>
+        <input type="text" placeholder="Add new habit" />
+        <button>Add Habit</button>
+      </div>
+      -->
+    </div>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
